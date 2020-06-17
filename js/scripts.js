@@ -23,20 +23,14 @@ console.log(movies[1].movieTitle)
 //console.log(courses[1].updateViews());
 
 
-/*function UserMovieSelection (movie)
-  $("img").click(function()
-    console.log("click");
-  ;*/
 
-$(document).ready(function(event) {
-  //$("form#movieOptions").submit(function(event) {
-  $("img").click(function(){
-    console.log("click");
-    
 
-  
-     console.log("click!");
-  event.preventDefault();
+
+  $(document).ready(function() {
+    $("#avengers-img").click(function() {
+      $("#movieSelection").text( movies[1].movieDescription +", " + movies[1].movieShowTime + ", " + movies[1].movieRating )
+      
+      console.log(movies[1].movieDescription)
+    });
   });
-});
 
