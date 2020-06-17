@@ -8,17 +8,21 @@
   <title>Movie Tickets</title>
 </head>
 <body>
+
   <div class="container">
+    <form id="movieOptions">
     <div class="ageInput">
       <label for="input-age">Enter Your Age</label>
       <input type="date" class="form-control" id="input-age">
     </div>
+
     <div class="movieSelection">
       <h1>Select a Movie</h1>
       <img src="http://www.theglobaldispatch.com/wp-content/uploads/2018/04/AVengers-Infinity-War-dolby-movie-poster.jpg" alt="Avengers" title="The Avengers: Infinity War" id="avengers-img">
       <img src="https://fffmovieposters.com/wp-content/uploads/73931.jpg" alt="harryPoter" title="Harry Potter and the Sorcerer's Stone" id="harryPotter-img">
       <img src="https://blog.spoongraphics.co.uk/wp-content/uploads/2017/movie-posters/1.jpg" alt="bladeRunner" title="Blade Runner" id="bladeRunner-img">
     </div>
+
     <div class="movieDescriptions">
       <div id="avengersDescription">
         <h1>The Avengers: Infinity War</h1>
@@ -26,12 +30,14 @@
           <p>Director: The Russo Brothers</p>
           <p>Starring: Robert Downey Jr., Chris Hemsworth, Scarlett Johansson, Chris Evans...</p>
       </div> 
+
       <div id="harryPotterDescription">
         <h1>Harry Potter and the Sorcerer's Stone</h1>
           <p>An orphaned boy enrolls in a school of wizardry, where he learns the truth about himself, his family and the terrible evil that haunts the magical world.</p>
           <p>Director: Chris Columbus</p>
           <p>Starring: Daneil Radcliffe, Emma Watson, Rupert Grint</p>
       </div> 
+
       <div id="bladeRunnerDescription">
         <h1>Blade Runner</h1>
           <p>A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth  to find their creator.</p>
@@ -39,6 +45,7 @@
           <p>Starring: Harrison Ford, Rutger Hauer, Sean Young</p>
       </div> 
     </div>
+
     <div class="timeSelection">
       <label for="select-time">Select A Time</label>
       <input type="radio" class="form-control" id="select-time" name="11:00am">
@@ -46,6 +53,7 @@
       <input type="radio" class="form-control" id="select-time" name="4:00pm">
       <input type="radio" class="form-control" id="select-time" name="6:00pm">
     </div>
+  </form>
   </div>
 </body>
 </html>

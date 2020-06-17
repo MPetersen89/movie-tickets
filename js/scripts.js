@@ -11,40 +11,32 @@ function Movie(movieTitle, movieDescription, movieShowTime, movieRating) {
   this.movieRating = movieRating;
 }
 
-//variables for individual movies
+//Array with  individual movies objects
 var movies = [
 new Movie ("BladeRunner", "sci-fi", ["11 am", "1 pm",  "4 pm", "6 pm"], "R"),
 new Movie ("theAvengers", "sci-fi", ["11 am", "1 pm",  "4 pm", "6 pm"], "PG-13"),
 new Movie ("harryPotter", "fantasy", ["11 am", "1 pm", "4 pm", "6 pm"], "PG")
 ];
+console.log(movies[1].movieTitle)
 
-Ticket.prototype.addMovie = function(movie) {
-  movie.id = this.assignId();
-  this.movie.push(movie);
-}
+//can call a function in an object like this: 
+//console.log(courses[1].updateViews());
 
-Ticket.prototype.assignId =function(movie) {
-  this.movieId += 1;
-  return this.movieId;
-}
 
-function UserMovieSelection (movie){ 
-}
+/*function UserMovieSelection (movie)
+  $("img").click(function()
+    console.log("click");
+  ;*/
 
 $(document).ready(function(event) {
-  $("avengers-img").click(function() {
-    $("avengersDescription").show();
-    console.log("image is responsive");
-  });
-  $("harryPotter-img").click(function() {
-    $("harryPotterDescription").show();
-    console.log("image is responsive");
-  });
-  $("bladeRunner-img").click(function() {
-    $("bladeRunnerDescription").show();
-    console.log("image is responsive");
-  });
+  //$("form#movieOptions").submit(function(event) {
+  $("img").click(function(){
+    console.log("click");
+    
 
+  
+     console.log("click!");
   event.preventDefault();
+  });
 });
-}
+
